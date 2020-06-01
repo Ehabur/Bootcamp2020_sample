@@ -20,4 +20,4 @@ jobs:
     - name: Installing Surge
       run: npm install -global surge
     - name: deploying using surge
-      run: surge ./ bootcamp2020_ehab.surge.sh --token "e4f9901405e7d90115b4d47a3fd744c5"
+      run: surge ./ bootcamp2020_ehab.surge.sh --token ${{ secrets.TOKEN }}
